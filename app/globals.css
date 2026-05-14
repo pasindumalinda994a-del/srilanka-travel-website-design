@@ -1,0 +1,73 @@
+@import "tailwindcss";
+@import "lenis/dist/lenis.css";
+
+@font-face {
+  font-family: "Coconat";
+  src:
+    url("/fonts/coconet/Coconat-Regular.woff2") format("woff2"),
+    url("/fonts/coconet/Coconat-Regular.woff") format("woff"),
+    url("/fonts/coconet/Coconat-Regular.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Coconat";
+  src:
+    url("/fonts/coconet/Coconat-Demi.woff2") format("woff2"),
+    url("/fonts/coconet/Coconat-Demi.woff") format("woff"),
+    url("/fonts/coconet/Coconat-Demi.otf") format("opentype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Coconat";
+  src:
+    url("/fonts/coconet/Coconat-Bold.woff2") format("woff2"),
+    url("/fonts/coconet/Coconat-Bold.woff") format("woff"),
+    url("/fonts/coconet/Coconat-Bold.otf") format("opentype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  /* Updated live by `Header` (ResizeObserver); fallback before hydration */
+  --header-height: 5rem;
+  --background: #ffffff;
+  --foreground: #171717;
+  /* Admin dashboard – aligned with main site (black/white/gray) */
+  --admin-sidebar-bg: #0a0a0a;
+  --admin-sidebar-text: #fafafa;
+  --admin-sidebar-muted: #a3a3a3;
+  --admin-accent: #171717;
+  --admin-card-border: #e5e5e5;
+  --admin-input-ring: rgba(0, 0, 0, 0.2);
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-satoshi), system-ui, -apple-system, sans-serif;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-satoshi), system-ui, -apple-system, sans-serif;
+  font-feature-settings: "kern" 1;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
