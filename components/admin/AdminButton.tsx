@@ -36,7 +36,7 @@ export function AdminButton({
   const classes = `${variantClasses[variant]} ${className}`.trim();
 
   if ("href" in props && props.href) {
-    const { href, variant: _v, ...rest } = props;
+    const { href, ...rest } = props;
     return (
       <Link href={href} className={classes} {...rest}>
         {children}

@@ -20,6 +20,7 @@ export function BookingDetailPopup({
   onStatusChange,
 }: BookingDetailPopupProps) {
   if (!booking) return null;
+  const activeBooking = booking;
 
   const styleMap: Record<BookingRow["status"], string> = {
     Pending: "bg-amber-100 text-amber-800 ring-1 ring-amber-200",
@@ -29,7 +30,7 @@ export function BookingDetailPopup({
 
   function handleStatusChange(e: React.ChangeEvent<HTMLSelectElement>) {
     const newStatus = e.target.value as BookingRow["status"];
-    onStatusChange?.(booking.id, newStatus);
+    onStatusChange?.(activeBooking.id, newStatus);
   }
 
   const DetailRow = ({
