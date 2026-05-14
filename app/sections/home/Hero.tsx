@@ -95,10 +95,10 @@ export default function Hero({ content }: HeroProps) {
 
   return (
     <section className="w-full pb-28 md:pb-30 lg:pb-32 pt-2 md:pt-1 lg:pt-1">
-      <div className="mx-auto px-4 md:px-6 lg:px-8">
-        <div className="grid grid-cols-12 gap-3">
-          <span className="col-span-12">
-            <div className="relative w-full h-[calc(100dvh-var(--header-height)-0.5rem)] lg:h-[calc(100dvh-var(--header-height)-1rem)] min-h-[320px] rounded-3xl overflow-hidden isolate">
+      <div className="mx-auto w-full px-0 md:px-6 lg:px-8">
+        <div className="grid min-w-0 grid-cols-12 gap-0 md:gap-3">
+          <span className="col-span-12 block min-w-0 w-full">
+            <div className="relative w-full min-w-0 h-[calc(100dvh-var(--header-height)-0.5rem)] lg:h-[calc(100dvh-var(--header-height)-1rem)] min-h-[320px] rounded-3xl overflow-hidden isolate">
               <div ref={heroImageRef} className="w-full h-full">
                 <Image
                   src={heroBg}
@@ -147,7 +147,7 @@ export default function Hero({ content }: HeroProps) {
                 className="absolute inset-0 text-white flex flex-col"
                 style={{ zIndex: LAYER.content }}
               >
-                <div className="px-6 md:px-6 lg:px-12 pt-6 md:pt-6 lg:pt-12 pb-6 md:pb-6 lg:pb-12 flex flex-col md:flex-row justify-between items-stretch gap-6 w-full h-full">
+                <div className="px-4 md:px-6 lg:px-12 pt-6 md:pt-6 lg:pt-12 pb-6 md:pb-6 lg:pb-12 flex flex-col md:flex-row justify-between items-stretch gap-6 w-full h-full">
                   <div className="flex flex-col items-start h-full min-h-0 flex-1 md:flex-initial md:w-auto">
                     {/* Bottom-left description + labels */}
                     <div ref={leftInfoRef} className="mt-auto">
