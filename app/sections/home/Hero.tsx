@@ -120,7 +120,7 @@ export default function Hero({ content }: HeroProps) {
                   textSize={{
                     mobile: "5.25rem",
                     tablet: "4.5rem",
-                    desktop: "18rem",
+                    desktop: "17rem",
                   }}
                   className="max-w-8xl bg-[linear-gradient(to_bottom,_#ffffff,_rgba(255,255,255,0.95),_rgba(255,255,255,0.55),_rgba(255,255,255,0.08),_transparent)] bg-clip-text text-transparent filter blur-[0.5px]"
                 >
