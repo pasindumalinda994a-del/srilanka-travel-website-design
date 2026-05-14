@@ -118,7 +118,7 @@ export default function Hero({ content }: HeroProps) {
               >
                 <H1
                   textSize={{
-                    mobile: "5.05rem",
+                    mobile: "4.75rem",
                     tablet: "10.25rem",
                     desktop: "17rem",
                   }}
